@@ -100,7 +100,7 @@ def predict_match_enhanced(home_team, away_team, model, team_encoder, df_feature
 # --- MAIN STREAMLIT APP ---
 def main():
     st.set_page_config(page_title="EPL Match Predictor", layout="wide")
-    st.title("⚽ ENHANCED EPL MATCH PREDICTOR")
+    st.title("⚽ EPL MATCH PREDICTOR")
     
     model, team_encoder, df_processed, available_features = load_artifacts()
     available_teams = sorted(team_encoder.classes_)
